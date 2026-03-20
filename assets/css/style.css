@@ -386,3 +386,11 @@ img { max-width: 100% }
     font-weight: bold;
     color:var(--black)
 }
+
+
+
+/*  */
+.board-directors-section{
+    padding-block: var(--section-sapce);
+    background-image: linear-gradient(180deg, #E3F1FF 0%, #FFFFFF 70%);
+}
