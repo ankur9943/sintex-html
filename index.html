@@ -1,339 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link href="assets/css/style.css" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/stellarnav.css" rel="stylesheet">
 
-</head>
-<body>
 
-    <!-- Navbar (Main Navigation) -->
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="assets/images/light-logo.png" alt="Sintex" width="168" height="100">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex mt-3" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+    </head>
+    <body>
+        <a class="visually-hidden-focusable" href="#content">Skip to main
+            content</a>
+
+        <!-- Navbar (Main Navigation) -->
+        <div class="navigation-container">
+            <div class="stellarnav right mobile active d-flex">
+            
+                <a class="navbar-brand" href="index.html"> 
+                    <img src="assets/images/light-logo.png" alt="Sintex" width="168" height="100">
+                </a>
+                <ul id="main-nav">
+                    <li>
+                        <a href="#">Who Are We</a>
+                        <ul>
+                            <li><a href="/who-are-we.html/">Who Are We</a></li>
+                            <li><a href="/leadership-team.html/">Leadership Team</a></li>
+                            <li><a href="/awards.html/">Awards</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                        <ul>
+                            <li><a href="/our-yarn.html/">Our Yarn</a></li>
+                            <li><a href="/cotton-and-blended-yarns.html/">100% Cotton & Blended</a></li>
+                            <li><a href="/linen-and-blended-yarns.html/">100% Linen & Blended</a></li>
+                            <li><a href="/bleached-absorbent-cotton.html/">100% Bleached Absorbent</a></li>
+                            <li><a href="/sustainable-value-added.html/">Sustainable & Value-added</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/infrastructure.html/">Infrastructure</a></li>
+                    <li>
+                        <a href="#">Quality</a>
+                        <ul>
+                            <li><a href="/quality-practices.html/">Quality Practices</a></li>
+                            <li><a href="/certifications.html/">Certifications</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Sustainability</a>
+                        <ul>
+                            <li><a href="/sustainability-overview.html/">Overview</a></li>
+                            <li><a href="/traceability.html/">Traceability</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Investor Desk</a>
+                        <ul>
+                            <li><a href="/investors.html/">Statutory Documents</a></li>
+                            <li><a href="/financial-reports.html/">Financial Reports</a></li>
+                            <li>
+                                <a href="#">Corporate Governance</a>
+                                <ul>
+                                    <li><a href="/shareholding-patterns.html/">Shareholding Patterns</a></li>
+                                    <li><a href="/policies.html/">Policies</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/announcements.html/">Announcements</a></li>
+                            <li><a href="/pressrelease.html/">Press Release</a></li>
+                            <li><a href="/unclaimed-dividend.html/">Unclaimed Dividend</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="primary-button" href="index.html">Get In Touch</a>
             </div>
         </div>
-    </nav>
 
-    <!-- Home Page Hero Section -->
-    <div class="">
-        <!-- Slider main container -->
-        <div class="swiper hero_banner">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide" >
-                    <img src="assets/images/hero-slider-1.jpg" alt="">
-                </div>
-                <div class="swiper-slide"><img src="assets/images/hero-slider-2.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="assets/images/hero-slider-3.jpg" alt=""></div>
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
-
-    <!-- About Us Section -->
-    <section>
-        <div class="about-us">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <div class="about-content">
-                            <span class="sub-title">About Us</span>
-                            <h2 class="title">A Benchmark in Textile Excellence</h2>
-                            <p class="info">Sintex Yarns has redefined the Indian textile landscape, emerging as a symbol of innovation, scale, and sustainability. Located in Gujarat, the largest cotton-producing state in India, Sintex operates India’s largest spinning plant, with over 6.73 lakh spindles spread across 523 acres. This remarkable achievement has established Sintex as a leader in the industry.
-                            <br> <br>
-                            Since its establishment in 2014, Sintex Yarns has continuously created value by leveraging the economy of scale to deliver competitive, high-quality products, and by expanding into international markets through strong customer partnerships. Our integration with the Reliance Group (Fortune Global 500) in 2023 marked a significant leap in capability, credibility, and global reach combining Sintex’s world-class spinning expertise with Reliance’s unmatched resources. Together, we drive innovation, sustainability, and supply chain excellence across every link of our value chain.</p>
-                            <a href="#" class="button primary-button">Know More</a>
-                        </div>
+        <!-- Home Page Hero Section -->
+        <div class>
+            <!-- Slider main container -->
+            <div class="swiper hero_banner">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="assets/images/hero-slider-1.jpg" alt>
                     </div>
-                    <div class="col-md-5">
-                        <div class="about-image">
-                            <img src="assets/images/about.png" alt="About Sintext">
-                        </div>
-                    </div>
+                    <div class="swiper-slide"><img
+                            src="assets/images/hero-slider-2.jpg" alt></div>
+                    <div class="swiper-slide"><img
+                            src="assets/images/hero-slider-3.jpg" alt></div>
                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
-    </section>
 
-    <!-- Sintex at a Glance -->
-    <Section>
-        <div class="sintex-glance">
-            <div class="container">
-                <div class="heading-content">
-                    <h2 class="title">Sintex at a Glance</h2>
-                    <p class="sub-title">Building world-class yarn solutions with integrated strength and global reach.</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="sintex-glance-card">
-                            <div class="sintex-glance-content">
-                                <span class="glance-card-name">Spindles Capacity</span>
-                                <h3 class="glance-card-number">
-                                    <span class="number">6.73</span>
-                                    <span class="prefix">L</span>
-                                </h3>
-                                <span class="glance-card-label">at a single location</span>
-                            </div>
-                            <div class="glance-card-icon">
-                                <img src="assets/icons/spin.png" alt="Spindles Capacity">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="sintex-glance-card">
-                            <div class="sintex-glance-content">
-                                <span class="glance-card-name">Production Capacity</span>
-                                <h3 class="glance-card-number">
-                                    <span class="number">333</span>
-                                </h3>
-                                <span class="glance-card-label">metric tons per day</span>
-                            </div>
-                            <div class="glance-card-icon">
-                                <img src="assets/icons/yarn.png" alt="Production Capacity">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="sintex-glance-card">
-                            <div class="sintex-glance-content">
-                                <span class="glance-card-name">Largest Single-Location Spinning Plant</span>
-                                <h3 class="glance-card-number">
-                                    <span class="number">523</span>
-                                </h3>
-                                <span class="glance-card-label">Acres</span>
-                            </div>
-                            <div class="glance-card-icon">
-                                <img src="assets/icons/spin.png" alt="Spindles Capacity">
+        <!-- About Us Section -->
+        <section>
+            <div class="about-us">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="about-content">
+                                <span class="sub-title">About Us</span>
+                                <h2 class="title">A Benchmark in Textile
+                                    Excellence</h2>
+                                <p class="info">Sintex Yarns has redefined the
+                                    Indian textile landscape, emerging as a
+                                    symbol of innovation, scale, and
+                                    sustainability. Located in Gujarat, the
+                                    largest cotton-producing state in India,
+                                    Sintex operates India’s largest spinning
+                                    plant, with over 6.73 lakh spindles spread
+                                    across 523 acres. This remarkable
+                                    achievement has established Sintex as a
+                                    leader in the industry.
+                                    <br> <br>
+                                    Since its establishment in 2014, Sintex
+                                    Yarns has continuously created value by
+                                    leveraging the economy of scale to deliver
+                                    competitive, high-quality products, and by
+                                    expanding into international markets through
+                                    strong customer partnerships. Our
+                                    integration with the Reliance Group (Fortune
+                                    Global 500) in 2023 marked a significant
+                                    leap in capability, credibility, and global
+                                    reach combining Sintex’s world-class
+                                    spinning expertise with Reliance’s unmatched
+                                    resources. Together, we drive innovation,
+                                    sustainability, and supply chain excellence
+                                    across every link of our value chain.</p>
+                                <a href="#" class="button primary-button">Know
+                                    More</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="sintex-glance-card">
-                            <div class="sintex-glance-content">
-                                <span class="glance-card-name">Serving</span>
-                                <h3 class="glance-card-number">
-                                    <span class="number">50</span>
-                                    <span class="prefix">+</span>
-                                </h3>
-                                <span class="glance-card-label">countries with trusted quality</span>
-                            </div>
-                            <div class="glance-card-icon">
-                                <img src="assets/icons/globe.png" alt="Serving">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="sintex-glance-card">
-                            <div class="sintex-glance-content">
-                                <span class="glance-card-name">A Leading Mfg. of</span>
-                                <h3 class="glance-card-number">
-                                    <span class="number">100</span>
-                                    <span class="prefix">%</span>
-                                </h3>
-                                <span class="glance-card-label">Cotton & Linen yarns from India</span>
-                            </div>
-                            <div class="glance-card-icon">
-                                <img src="assets/icons/spin.png" alt="Spindles Capacity">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="sintex-glance-card">
-                            <div class="sintex-glance-content">
-                                <span class="glance-card-name">One of Largest Exporter</span>
-                                <h3 class="glance-card-number">
-                                    <!-- <span class="number">100</span> -->
-                                    <span class="prefix">Cotton & Blended Yarns</span>
-                                </h3>
-                                <span class="glance-card-label">from India</span>
-                            </div>
-                            <div class="glance-card-icon">
-                                <img src="assets/icons/spin.png" alt="Spindles Capacity">
+                        <div class="col-md-5">
+                            <div class="about-image">
+                                <img src="assets/images/about.png"
+                                    alt="About Sintext">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </Section>
+        </section>
 
-    <!-- Our Products Section -->
-     <section>
-        <div class="our-product">
-            <div class="container-fluid">
-                <div class="heading-content">
-                    <h2 class="title">Our Products</h2>
-                    <p class="sub-title">Sintex Yarns offers a versatile and innovative product range tailored to meet the dynamic needs of global industries.</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="product-card">
-                            <div class="product-card-content">
-                                <h3 class="product-title">100% Cotton & Blended Yarns</h3>
-                                <p class="product-info">We are one of India’s largest manufacturers of 100% cotton yarn. Our cotton yarns are spun from the finest natural fibres, offering exceptional softness, breathability, and strength. Engineered to be skin-friendly and long-lasting, our yarns are trusted across a wide range of applications..</p>
-                                <a href="" class="product-link">Learn More</a>
-                            </div>
-                            <div class="product-image" style="background: url(./assets/images/product-background.png);">
-                                <img src="assets/images/product-1.png" alt="100% Cotton & Blended Yarns">
+        <!-- Sintex at a Glance -->
+        <section>
+            <div class="sintex-glance">
+                <div class="container">
+                    <div class="heading-content">
+                        <h2 class="title">Sintex at a Glance</h2>
+                        <p class="sub-title">Building world-class yarn solutions
+                            with integrated strength and global reach.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="sintex-glance-card">
+                                <div class="sintex-glance-content">
+                                    <span class="glance-card-name">Spindles
+                                        Capacity</span>
+                                    <h3 class="glance-card-number">
+                                        <span class="number">6.73</span>
+                                        <span class="prefix">L</span>
+                                    </h3>
+                                    <span class="glance-card-label">at a single
+                                        location</span>
+                                </div>
+                                <div class="glance-card-icon">
+                                    <img src="assets/icons/spin.png"
+                                        alt="Spindles Capacity">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="product-card">
-                            <div class="product-card-content">
-                                <h3 class="product-title">100% Cotton & Blended Yarns</h3>
-                                <p class="product-info">Our 100% linen yarns are crafted from premium European flax fibres celebrated for their natural lustre, exceptional breathability, and remarkable strength. As one of India’s largest manufacturers of 100% linen yarn, we ensure uncompromised quality through superior flax sourcing, precision-controlled spinning..</p>
-                                <a href="" class="product-link">Learn More</a>
-                            </div>
-                            <div class="product-image" style="background: url('./assets/images/product-background.png');">
-                                <img src="assets/images/product-2.png" alt="100% Cotton & Blended Yarns">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="product-card">
-                            <div class="product-card-content">
-                                <h3 class="product-title">Sustainable & Value-added Yarns</h3>
-                                <p class="product-info">Our sustainable yarns are developed with a strong commitment to environmental responsibility. We incorporate eco-friendly materials such as organic cotton, recycled fibres, and biodegradable blends, produced through resource-efficient processes..</p>
-                                <a href="" class="product-link">Learn More</a>
-                            </div>
-                            <div class="product-image" style="background: url(./assets/images/product-background.png);">
-                                <img src="assets/images/product-3.png" alt="100% Cotton & Blended Yarns">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="sintex-glance-card">
+                                <div class="sintex-glance-content">
+                                    <span class="glance-card-name">Production
+                                        Capacity</span>
+                                    <h3 class="glance-card-number">
+                                        <span class="number">333</span>
+                                    </h3>
+                                    <span class="glance-card-label">metric tons
+                                        per day</span>
+                                </div>
+                                <div class="glance-card-icon">
+                                    <img src="assets/icons/yarn.png"
+                                        alt="Production Capacity">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="product-card">
-                            <div class="product-card-content">
-                                <h3 class="product-title">100% Bleached Absorbent Cotton</h3>
-                                <p class="product-info">Sintex is a leading manufacturer of absorbent cotton (Surgical Cotton) in India. Known for its high absorbency, our cotton is widely used in the medical industry for dressings and other applications. </p>
-                                <a href="" class="product-link">Learn More</a>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="sintex-glance-card">
+                                <div class="sintex-glance-content">
+                                    <span class="glance-card-name">Largest
+                                        Single-Location Spinning Plant</span>
+                                    <h3 class="glance-card-number">
+                                        <span class="number">523</span>
+                                    </h3>
+                                    <span class="glance-card-label">Acres</span>
+                                </div>
+                                <div class="glance-card-icon">
+                                    <img src="assets/icons/spin.png"
+                                        alt="Spindles Capacity">
+                                </div>
                             </div>
-                            <div class="product-image" style="background: url(./assets/images/product-background.png);">
-                                <img src="assets/images/product-4.png" alt="100% Cotton & Blended Yarns">
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="sintex-glance-card">
+                                <div class="sintex-glance-content">
+                                    <span
+                                        class="glance-card-name">Serving</span>
+                                    <h3 class="glance-card-number">
+                                        <span class="number">50</span>
+                                        <span class="prefix">+</span>
+                                    </h3>
+                                    <span class="glance-card-label">countries
+                                        with trusted quality</span>
+                                </div>
+                                <div class="glance-card-icon">
+                                    <img src="assets/icons/globe.png"
+                                        alt="Serving">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="sintex-glance-card">
+                                <div class="sintex-glance-content">
+                                    <span class="glance-card-name">A Leading
+                                        Mfg. of</span>
+                                    <h3 class="glance-card-number">
+                                        <span class="number">100</span>
+                                        <span class="prefix">%</span>
+                                    </h3>
+                                    <span class="glance-card-label">Cotton &
+                                        Linen yarns from India</span>
+                                </div>
+                                <div class="glance-card-icon">
+                                    <img src="assets/icons/spin.png"
+                                        alt="Spindles Capacity">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="sintex-glance-card">
+                                <div class="sintex-glance-content">
+                                    <span class="glance-card-name">One of
+                                        Largest Exporter</span>
+                                    <h3 class="glance-card-number">
+                                        <!-- <span class="number">100</span> -->
+                                        <span class="prefix">Cotton & Blended
+                                            Yarns</span>
+                                    </h3>
+                                    <span class="glance-card-label">from
+                                        India</span>
+                                </div>
+                                <div class="glance-card-icon">
+                                    <img src="assets/icons/spin.png"
+                                        alt="Spindles Capacity">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-     </section>
+        </section>
 
-    <!--CTA Section  -->
-    <section>
-        <div class="cta-section" style="background: url('./assets/images/cta-bg.png');">
-            <div class="cta-section-inner">
-                 <h3>Looking for high-quality, sustainable yarns? Explore our product range and find the perfect fit for your needs.</h3>
-                <a href="#" class="primary-button">Get in touch to place your order today!</a>
+        <!-- Our Products Section -->
+        <section>
+            <div class="our-product">
+                <div class="container-fluid">
+                    <div class="heading-content">
+                        <h2 class="title">Our Products</h2>
+                        <p class="sub-title">Sintex Yarns offers a versatile and
+                            innovative product range tailored to meet the
+                            dynamic needs of global industries.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="product-card">
+                                <div class="product-card-content">
+                                    <h3 class="product-title">100% Cotton &
+                                        Blended Yarns</h3>
+                                    <p class="product-info">We are one of
+                                        India’s largest manufacturers of 100%
+                                        cotton yarn. Our cotton yarns are spun
+                                        from the finest natural fibres, offering
+                                        exceptional softness, breathability, and
+                                        strength. Engineered to be skin-friendly
+                                        and long-lasting, our yarns are trusted
+                                        across a wide range of
+                                        applications..</p>
+                                    <a href class="product-link">Learn More</a>
+                                </div>
+                                <div class="product-image"
+                                    style="background: url(./assets/images/product-background.png);">
+                                    <img src="assets/images/product-1.png"
+                                        alt="100% Cotton & Blended Yarns">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="product-card">
+                                <div class="product-card-content">
+                                    <h3 class="product-title">100% Cotton &
+                                        Blended Yarns</h3>
+                                    <p class="product-info">Our 100% linen yarns
+                                        are crafted from premium European flax
+                                        fibres celebrated for their natural
+                                        lustre, exceptional breathability, and
+                                        remarkable strength. As one of India’s
+                                        largest manufacturers of 100% linen
+                                        yarn, we ensure uncompromised quality
+                                        through superior flax sourcing,
+                                        precision-controlled spinning..</p>
+                                    <a href class="product-link">Learn More</a>
+                                </div>
+                                <div class="product-image"
+                                    style="background: url('./assets/images/product-background.png');">
+                                    <img src="assets/images/product-2.png"
+                                        alt="100% Cotton & Blended Yarns">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="product-card">
+                                <div class="product-card-content">
+                                    <h3 class="product-title">Sustainable &
+                                        Value-added Yarns</h3>
+                                    <p class="product-info">Our sustainable
+                                        yarns are developed with a strong
+                                        commitment to environmental
+                                        responsibility. We incorporate
+                                        eco-friendly materials such as organic
+                                        cotton, recycled fibres, and
+                                        biodegradable blends, produced through
+                                        resource-efficient processes..</p>
+                                    <a href class="product-link">Learn More</a>
+                                </div>
+                                <div class="product-image"
+                                    style="background: url(./assets/images/product-background.png);">
+                                    <img src="assets/images/product-3.png"
+                                        alt="100% Cotton & Blended Yarns">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="product-card">
+                                <div class="product-card-content">
+                                    <h3 class="product-title">100% Bleached
+                                        Absorbent Cotton</h3>
+                                    <p class="product-info">Sintex is a leading
+                                        manufacturer of absorbent cotton
+                                        (Surgical Cotton) in India. Known for
+                                        its high absorbency, our cotton is
+                                        widely used in the medical industry for
+                                        dressings and other applications. </p>
+                                    <a href class="product-link">Learn More</a>
+                                </div>
+                                <div class="product-image"
+                                    style="background: url(./assets/images/product-background.png);">
+                                    <img src="assets/images/product-4.png"
+                                        alt="100% Cotton & Blended Yarns">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sustainability Infrastructure Section -->
-    <section>
-        <div class="sustainability-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="sustainability-content heading-content">
-                            <h2>State-of-the-Art Sustainability Infrastructure</h2>
-                            <ul class="sustainability-list">
-                                <li>
-                                    <span class="hightlight-text">Zero-Discharge Effluent Treatment Plant:</span>
-                                    <p>Processing 6,000 KLD of wastewater, ensuring no discharge.</p>
-                                </li>
+        <!--CTA Section  -->
+        <section>
+            <div class="cta-section"
+                style="background: url('./assets/images/cta-bg.png');">
+                <div class="cta-section-inner">
+                    <h3>Looking for high-quality, sustainable yarns? Explore our
+                        product range and find the perfect fit for your
+                        needs.</h3>
+                    <a href="#" class="primary-button">Get in touch to place
+                        your order today!</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sustainability Infrastructure Section -->
+        <section>
+            <div class="sustainability-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="sustainability-content heading-content">
+                                <h2>State-of-the-Art Sustainability
+                                    Infrastructure</h2>
+                                <ul class="sustainability-list">
                                     <li>
-                                    <span class="hightlight-text">Reverse Osmosis (RO) Plant:</span>
-                                    <p>Achieving 92% water recovery, significantly lowering water wastage.</p>
-                                </li>
+                                        <span
+                                            class="hightlight-text">Zero-Discharge
+                                            Effluent Treatment Plant:</span>
+                                        <p>Processing 6,000 KLD of wastewater,
+                                            ensuring no discharge.</p>
+                                    </li>
                                     <li>
-                                    <span class="hightlight-text">Multiple Effect Evaporators (MEE):</span>
-                                    <p>Advanced wastewater treatment for a complete, eco-friendly water cycle.</p>
-                                </li>
-                            </ul>
-                            <p>By seamlessly integrating innovative technology with eco-conscious practices, Sintex Yarns exemplifies sustainability at every level, from production to product.</p>
-                            <a href="#" class="primary-button">Explore More</a>
+                                        <span class="hightlight-text">Reverse
+                                            Osmosis (RO) Plant:</span>
+                                        <p>Achieving 92% water recovery,
+                                            significantly lowering water
+                                            wastage.</p>
+                                    </li>
+                                    <li>
+                                        <span class="hightlight-text">Multiple
+                                            Effect Evaporators (MEE):</span>
+                                        <p>Advanced wastewater treatment for a
+                                            complete, eco-friendly water
+                                            cycle.</p>
+                                    </li>
+                                </ul>
+                                <p>By seamlessly integrating innovative
+                                    technology with eco-conscious practices,
+                                    Sintex Yarns exemplifies sustainability at
+                                    every level, from production to product.</p>
+                                <a href="#" class="primary-button">Explore
+                                    More</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-5 offset-md-1">
-                        <div class="image">
-                            <img src="assets/images/eco-friendly-sustainable-infrastructure-2.png" alt=" Sustainability Infrastructure">
+                        <div class="col-md-5 offset-md-1">
+                            <div class="image">
+                                <img
+                                    src="assets/images/eco-friendly-sustainable-infrastructure-2.png"
+                                    alt=" Sustainability Infrastructure">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Global Presence Section -->
-    <section>
-        <div class="global-presence">
-            <div class="container">
-                <div class="heading-content">
-                    <h2 class="title">Global Presence</h2>
-                    <p class="sub-title">
-                       Sintex Yarns continues to lead, inspire and redefine global textile standards. Together, we create a future where possibilities are limitless.
-                    </p>
-                </div>
-                <div class="global-presence-image">
-                    <img src="assets//images/map.png" alt="Global Presence">
+        <!-- Global Presence Section -->
+        <section>
+            <div class="global-presence">
+                <div class="container">
+                    <div class="heading-content">
+                        <h2 class="title">Global Presence</h2>
+                        <p class="sub-title">
+                            Sintex Yarns continues to lead, inspire and redefine
+                            global textile standards. Together, we create a
+                            future where possibilities are limitless.
+                        </p>
+                    </div>
+                    <div class="global-presence-image">
+                        <img src="assets//images/map.png" alt="Global Presence">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-    <script src="assets/js/main.js"></script>
-
-</body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+         <script src="./assets/js/main.js"></script>
+        <script type="text/javascript" src="./assets/js/stellarnav.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+            integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+            crossorigin="anonymous"></script>
+       
+    </body>
 </html>

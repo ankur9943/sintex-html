@@ -56,6 +56,8 @@
     --font-size : 30px;
     --body-font-size : 14px;
     --section-sapce : 3rem;
+
+    --font-family : 'Parkinsans', 'Lato', 'Roboto', sans-serif ;
 }
 @media screen and (min-width:768px){
     :root{
@@ -76,24 +78,12 @@ body{
     font-family: 'Parkinsans', 'Lato', 'Roboto', sans-serif ;
     font-size: var(--body-font-size)
 }
-h1,h2,h3,h4,h5,h6{font-family: 'Lato', 'Roboto', sans-serif ;}
 
-h2{
-    font-size:var(--font-size);
-    line-height: 1.25;
-    margin-bottom: 1rem;
-}
-h3{
-    font-size:calc(var(--font-size) - 6px);
-    line-height: 1.25;
-    margin-bottom: .75rem;
-}
-p{
-    margin-bottom: 14px;
-    font-family: 'Parkinsans', 'Lato', 'Roboto', sans-serif ;
-    color: var(--light-grey);
-}
-img{ max-width: 100%; }
+h1,h2,h3,h4,h5,h6{font-family: 'Lato', 'Roboto', sans-serif }
+h2 { font-size:var(--font-size);line-height: 1.25;margin-bottom: 1rem;}
+h3 { font-size:calc(var(--font-size) - 6px);line-height: 1.25;margin-bottom: .75rem}
+p { margin-bottom: 14px; font-family: var(--font-family); color: var(--light-grey)}
+img { max-width: 100% }
 
 .container{max-width: 1290px !important;width: 100%;}
 .primary-button{
@@ -105,13 +95,21 @@ img{ max-width: 100%; }
     border-style: inherit;
     border-radius: 10px;
     font-weight: 700;
-    font-family: 'Lato', 'Roboto', sans-serif ;
+    font-family: var(--font-family);
     display: inline-block;
+    transition: .3s ease-in-out;
+}
+.primary-button:hover{
+    background:#08aefb
 }
 @media screen and (min-width:768px){
     .primary-button{ padding: 18px 40px;}
 }
 
+
+.navigation-container{
+    padding: 16px;
+}
 
 
 /* Hero Banner Home page */
@@ -199,7 +197,8 @@ img{ max-width: 100%; }
     padding-block: var(--section-sapce);
     padding-inline: 20px;
 }
-.our-product .container-fluid{
+.our-product .container-fluid,
+.navigation-container{
     max-width: 1920px;
 }
 .product-card{
@@ -216,7 +215,7 @@ img{ max-width: 100%; }
     .product-card{grid-template-columns:  1fr 1fr; gap: 20px;}
 }
 @media screen and (min-width:1920px) {
-    .our-product{padding-inline: 70px;}
+    .our-product,.navigation-container{padding-inline: 70px;}
 }
 .product-card-content{
     background-color: #f7f6f5;
