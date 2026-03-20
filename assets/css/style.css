@@ -8,7 +8,7 @@
 @font-face {
     font-family: 'Parkinsans';
     src: local('Parkinsans Regular'), local('Parkinsans-Regular'),
-        url('./assets/fonts/Parkinsans-Regular.ttf') format('truetype');
+        url('../fonts/Parkinsans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -16,7 +16,7 @@
 @font-face {
     font-family: 'Parkinsans';
     src: local('Parkinsans Medium'), local('Parkinsans-Medium'),
-        url('./assets/fonts/Parkinsans-Medium.ttf') format('truetype');
+        url('../fonts/Parkinsans-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -24,7 +24,7 @@
 @font-face {
     font-family: 'Parkinsans';
     src: local('Parkinsans SemiBold'), local('Parkinsans-SemiBold'),
-        url('./assets/fonts/Parkinsans-SemiBold.ttf') format('truetype');
+        url('../fonts/Parkinsans-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -32,7 +32,7 @@
 @font-face {
     font-family: 'Lato';
     src: local('Lato Bold'), local('Lato-Bold'),
-        url('./assets/fonts/Lato-Bold.ttf') format('truetype');
+        url('../fonts/Lato-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -40,7 +40,7 @@
 @font-face {
     font-family: 'Lato';
     src: local('Lato Black'), local('Lato-Black'),
-        url('./assets/fonts/Lato-Black.ttf') format('truetype');
+        url('../fonts/Lato-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
