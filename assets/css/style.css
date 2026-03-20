@@ -322,7 +322,15 @@ img { max-width: 100% }
     text-align: center;
     color: var(--white);
 }
-@media screen and (min-width:768px){.title-box{ padding:40px 20px }}
+.title-box h1{ font-size: 34px;color: var(--white); text-align: center; }
+@media screen and (min-width:768px){
+    .title-box{ padding:40px 20px}
+    .title-box h1{ font-size: 45px }
+}
+@media screen and (min-width:1200px){
+    .title-box{ padding:40px 20px }
+    .title-box h1{ font-size: 57px}
+}
 
 .textile-excellence-section{
     padding-block: var(--section-sapce);
@@ -389,8 +397,151 @@ img { max-width: 100% }
 
 
 
-/*  */
+ /* Board of Directors Section */
 .board-directors-section{
     padding-block: var(--section-sapce);
     background-image: linear-gradient(180deg, #E3F1FF 0%, #FFFFFF 70%);
+}
+.member-card{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    margin-top: 70px;
+    text-align: center;
+}
+@media screen and (min-width:768px) {
+    .member-card{ flex-flow: row;text-align: inherit;}
+}
+.member-card:hover .member-image img{
+    transform: scale(1.1);
+}
+.member-image{
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 148.99999999999994, 218, 0.15);
+    height: 230px;
+    max-width: 230px;
+    width: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+}
+@media screen and (min-width:768px) {
+    .member-image{ margin-right: 20px;margin-bottom: 0;}
+}
+.member-image img{transition: all .3s ease-in-out;}
+.member-content .member-name{
+    font-size: 17px;
+    color: var(--black);
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+@media screen and (max-width:767px) {
+    .member-description{font-size: 14px;}
+}
+@media screen and (min-width:768px) {
+    .member-content .member-name{font-size: 18px;}
+}
+@media screen and (min-width:1200px) {
+    .member-content .member-name{font-size: 19px;}
+}
+.member-degisnation{color:#949393;margin-bottom: 8px;}
+.member-content .divider{
+    width: 100px;
+    border-bottom: 1px solid var(--black);
+    margin-bottom: 8px;
+    display: inline-block;
+}
+.member-read-more-btn{
+    display: inline-block;
+    color: #40798C;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* committee-table Section */
+.committee-table{
+    padding-block: var(--section-sapce);
+    background-image: linear-gradient(180deg, #EEEEEE 0%, #FFFFFF 100%);
+}
+.committee-table-inner{
+    background: var(--white);
+}
+.header-row {
+    background-color: var(--light-blue);
+    color: var(--white);
+    font-weight: 600;
+    padding: 12px 15px;
+}
+.committee-row {
+    border-top: 1px solid #dee2e6;
+    padding: 15px 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.committee-name {
+    flex: 1 1 40%;
+    font-weight: 600;
+    padding-right: 15px;
+}
+.committee-members {
+    flex: 1 1 60%;
+}
+.committee-members a {
+    display: block;
+    color: #004080;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+.committee-members a:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+    .committee-name, .committee-members {
+    flex: 1 1 100%;
+    padding-right: 0;
+    }
+}
+
+/* Awards Page  */
+/*******************/
+
+.awards-card-section{
+    padding-block: var(--section-sapce);
+}
+.awards-card-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-flow: column;
+    gap:20px
+}
+.bg-light-blue{background-color: #E3F1FF;}
+.awards-card-section .awards-card-content{width: 100%;}
+.awards-card-section .awards-card-image{
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+.awards-card-section .awards-card-image .swiper{
+    width: calc(100% - 60px);
+    position: static;
+}
+.awards-card-inner .swiper .swiper-button-prev {left: -2px;color:var(--black)}
+.awards-card-inner .swiper .swiper-button-next {right: -2px;color:var(--black)}
+.awards-card-inner .swiper .swiper-button-prev:after,.awards-card-inner .swiper .swiper-button-next:after {font-size:24px;}
+.awards-card-section .awards-card-content .title{
+    font-size: 24px;
+    color: var(--light-blue);
+}
+@media screen and (min-width:1200px) {
+    .awards-card-section :is(.awards-card-content,.awards-card-image){width: 45%;}
+    .awards-card-inner{flex-flow: row}
+    .awards-card-section.bg-light-blue .awards-card-inner{flex-flow: row-reverse;}
+    .awards-card-section .awards-card-content .title{ font-size: 30px;}
 }
