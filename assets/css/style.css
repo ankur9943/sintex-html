@@ -85,8 +85,8 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6{font-family: 'Lato', 'Roboto', sans-serif }
-h2 { font-size:var(--font-size);line-height: 1.25;margin-bottom: 1rem;}
-h3 { font-size:calc(var(--font-size) - 6px);line-height: 1.25;margin-bottom: .75rem}
+h2 { font-size:var(--font-size);line-height: 1.125;margin-bottom: 1rem;}
+h3 { font-size:calc(var(--font-size) - 6px);line-height: 1.1;margin-bottom: .75rem}
 p { margin-bottom: 14px; font-family: var(--font-family); color: var(--light-grey)}
 img { max-width: 100% }
 
@@ -874,4 +874,29 @@ img { max-width: 100% }
     .collaboration-card{ min-height: 300px;margin-top: 40px;}
     .collaboration-card .title{ font-size: 28px;}
 }
+
+.footprint-section{
+    padding-block: var(--section-sapce);
+    background-image: linear-gradient(180deg, #EEEEEE66 0%, #FFFFFF 100%);
+    text-align: center;
+}
+.footprint-section .row{padding-top: 40px;}
+.footprint-section .content-card { text-align: left;margin-bottom:15px;}
+.content-card .image{ margin-bottom: 20px;}
+.content-card .title{ font-size: 19px;}
+.content-card .list{ padding-left: 20px;}
+.content-card .list li{ color: var(--light-grey);padding-bottom: 4px;}
+
+@media screen and (min-width:768px){
+   .content-card .title{font-size: 20px;}
+    .footprint-section .content-card {margin-bottom:30px;}
+    .footprint-section .row{padding-top: 45px;}
+}
+@media screen and (min-width:1200px){
+    .content-card .title{font-size: 23px;}
+    .footprint-section .content-card {margin-bottom:40px;}
+}
+
+.sustainability-infrastructure-section{padding-block: var(--section-sapce); text-align: center;}
+.sustainability-infrastructure-section .content-card { margin-top:45px;}
 
