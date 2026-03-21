@@ -88,7 +88,7 @@ $(document).ready(function () {
 // Navigation Script
 jQuery(document).ready(function($) {
     jQuery('.stellarnav').stellarNav({
-        breakpoint: 960,
+        breakpoint: 1200,
         position: 'right',
     });
 });

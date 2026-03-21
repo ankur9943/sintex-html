@@ -108,11 +108,11 @@ body.stellarnav-noscroll-x { overflow-x: hidden; }
 .stellarnav.mobile ul { text-align: left; }
 .stellarnav.mobile > ul > li { display: block; }
 .stellarnav.mobile > ul > li > a { padding: 15px; }
-.stellarnav.mobile ul { background: rgba(221, 221, 221, 1); }
+.stellarnav.mobile ul { background: var(--light-blue); }
 .stellarnav.mobile ul ul { position: relative; opacity: 1; visibility: visible; width: auto; display: none; -moz-transition: none; -webkit-transition: none; -o-transition: color 0 ease-in; transition: none; }
 .stellarnav.mobile ul ul ul { left: auto; top: auto; }
 .stellarnav.mobile li.drop-left ul ul { right: auto; }
-.stellarnav.mobile li a { border-bottom: 1px solid rgba(255, 255, 255, .15); }
+.stellarnav.mobile li a { border-bottom: 1px solid rgba(255, 255, 255, .15);color:var(--white); }
 .stellarnav.mobile > ul { border-top: 1px solid rgba(255, 255, 255, .15); }
 .stellarnav.mobile.light li a { border-bottom: 1px solid rgba(0, 0, 0, .15); }
 .stellarnav.mobile.light > ul { border-top: 1px solid rgba(0, 0, 0, .15); }
@@ -130,7 +130,7 @@ body.stellarnav-noscroll-x { overflow-x: hidden; }
 .stellarnav.mobile li.has-sub > a:after, .stellarnav.mobile li li.has-sub > a:after, .stellarnav.mobile li.drop-left li.has-sub > a:after { display: none; }
 
 /* left and right positions */
-.stellarnav.mobile.right > ul, .stellarnav.mobile.left > ul { position: fixed; top: 0; bottom: 0; width: 100%; max-width: 280px; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.stellarnav.mobile.right > ul, .stellarnav.mobile.left > ul { z-index: 5; position: fixed; top: 0; bottom: 0; width: 100%; max-width: 320px; overflow-x: hidden; overflow-y: auto; -webkit-overflow-scrolling: touch; }
 .stellarnav.mobile.right > ul { right: 0; }
 .stellarnav.mobile.right .close-menu, .stellarnav.mobile.left .close-menu { display: inline-block; text-align: right; }
 .stellarnav.mobile.left > ul { left: 0; }
