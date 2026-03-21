@@ -304,7 +304,9 @@ img { max-width: 100% }
 }
 .sustainability-list{
     margin-block: 1.5rem 2rem;
+    padding-left: 20px;
 }
+.sustainability-list li {margin-bottom: 10px;}
 .sustainability-list li .hightlight-text{
     color: var(--light-grey);
     font-weight: bold;
@@ -789,3 +791,20 @@ img { max-width: 100% }
 @media screen and (max-width:767px){.makeing-card .title { font-size:var(--font-size-32);}.makeing-card{margin-top: 20px;}}
 
 
+/*  */
+.grid-col-2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:10px;
+}
+@media screen and (min-width:768px){
+    .grid-col-2{ grid-template-columns: 1fr 1fr;}
+}
+
+.sustainability-list.grid-col-2 li p{
+  color: #000
+}
+.sustainability-list.grid-col-2 .hightlight-text{
+    color: #000!important;
+    font-weight: 700 !important;
+}
