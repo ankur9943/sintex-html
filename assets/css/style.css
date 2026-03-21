@@ -900,3 +900,32 @@ img { max-width: 100% }
 .sustainability-infrastructure-section{padding-block: var(--section-sapce); text-align: center;}
 .sustainability-infrastructure-section .content-card { margin-top:45px;}
 
+
+/*  */
+.process-section{
+    padding-block: var(--section-sapce);
+    background: linear-gradient(180deg, #EEEEEE66 0%, #FFFFFF 100%);
+}
+.process-tabs{margin-top: 25px;}
+.process-tabs li{
+    padding:16px 0px;
+    border-bottom:1px solid #1b4e9b;
+    width: 100%;
+}
+.process-tabs li button{
+    font-size: 15px;
+    font-weight: 500;
+    text-align: left;
+    padding:0px;
+    color: #8a8d91;
+    width: 100%;
+    display: block;
+}
+.process-tabs :is(li:hover,li.active){border-bottom:1px solid #0095da;}
+.process-tabs :is(li:hover,li.active) button,
+.process-tabs button.active{color:#0a1724;}
+.process-tabs{padding-left: 0px;}
+@media screen and (min-width:768px){
+   .process-tabs li button{ font-size: 17px;}
+   .process-tabs{margin-top: 40px;}
+}
