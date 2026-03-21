@@ -17,9 +17,7 @@ $(document).ready(function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-
         effect: 'slide',
-
         // Responsive
         breakpoints: {
             768: {
@@ -33,7 +31,6 @@ $(document).ready(function () {
 });
 
 // Awards Slider ( awards-slider-one)
-
 $(document).ready(function () {
     var swiper = new Swiper('.awards-slider-one', {
         loop: true,
@@ -49,6 +46,41 @@ $(document).ready(function () {
         effect: 'slide',
     });
 });
+
+
+// product Applicatio Slider
+$(document).ready(function () {
+    var swiper = new Swiper('.product-applicatio-slider', {
+        loop: true,
+        speed: 800,
+        spaceBetween:10,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        effect: 'slide',
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1100: {
+                slidesPerView: 4,
+                spaceBetween: 25,
+            }
+        }
+    });
+});
+
+
 
 
 

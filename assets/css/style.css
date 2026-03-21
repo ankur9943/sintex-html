@@ -105,6 +105,13 @@ img { max-width: 100% }
 @media screen and (min-width:768px){
     .primary-button{ padding: 18px 40px;}
 }
+.primary-button :is(.btn-icon,svg,i){
+    margin-right: 8px;
+    color: currentColor;
+    width: 20px;
+    display: inline-block;
+    fill: currentColor;
+}
 
 
 .navigation-container{
@@ -197,7 +204,7 @@ img { max-width: 100% }
     padding-block: var(--section-sapce);
     padding-inline: 20px;
 }
-.our-product .container-fluid,
+.container-fluid,
 .navigation-container{
     max-width: 1920px;
 }
@@ -510,9 +517,7 @@ img { max-width: 100% }
 /* Awards Page  */
 /*******************/
 
-.awards-card-section{
-    padding-block: var(--section-sapce);
-}
+.awards-card-section{padding-block: var(--section-sapce);}
 .awards-card-inner{
     display: flex;
     justify-content: space-between;
@@ -547,28 +552,87 @@ img { max-width: 100% }
 }
 
 
-/* Our Yarn */
+/* Our Yarn Page */
 /********************/
 
 .superior-yarn{
     padding-block: var(--section-sapce);
     background-image: linear-gradient(180deg, #E3F1FF 0%, #FFFFFF 70%);
+    border-bottom: 1px solid #e0ddd9;
 }
 .superior-yarn .heading-content{text-align: center;}
 .yarn-card{
     background: var(--white);
-    padding: 30px;
+    padding: 15px;
     border: 1px solid #E9E9E9;
     margin-top: 30px;
     height: stretch
 }
+.yarn-image{text-align: center;}
 .yarn-card .yarns-name{
-    font-size: 28px;
+    font-size: 20px;
     color: var(--black);
     border-bottom: 1px solid #E9E9E9;
     padding-block: 16px;
     margin-bottom: 16px;
 }
-.yarn-card .yarn-description{
-    color: #000;
+.yarn-card .yarn-description{color: #000;}
+@media screen and (min-width:768px) {
+    .yarn-card{padding: 15px;}
+    .yarn-card .yarns-name{font-size: 21px;}
 }
+@media screen and (min-width:1200px) {
+    .yarn-card{padding: 30px;}
+    .yarn-card .yarns-name{font-size: 28px;}
+}
+
+
+/* Our Product Without Product Description */
+.our-product-grid{
+    background-color: #FAFAFA;
+    padding-block: var(--section-sapce);
+    text-align: center;
+}
+.our-product-grid .row{justify-content: center;}
+.product-card-grid {text-align: center;margin-top: 50px;}
+.product-card-grid .product-name{
+    color: var(--light-blue);
+    font-size: 20px;
+    margin-block: 14px;
+    text-align: center;
+}
+@media screen and (min-width:768px) {
+    .product-card-grid .product-name{ font-size: 23px;}
+    .our-product-grid{padding-inline: 20px;}
+}
+.product-card-grid .primary-button{
+    padding: 12px 28px;
+    margin-top: 14px;
+}
+
+/*  */
+.cta-section.bg-grey {background-color: #E3F1FF !important;}
+.cta-section.bg-grey .cta-section-inner :is(h2,h3){font-size: var(--font-size);color: var(--light-blue);}
+
+
+/* 100% Cotton & Blended Yarns Page */
+/* **************************************/
+
+.product-application-section{
+    padding-block: var(--section-sapce);
+    text-align: center;
+}
+.product-application-inner{
+    position: relative;
+    text-align: center;
+    margin-block: 40px;
+}
+.product-applicatio-slider.swiper{
+    width: calc(100% - 60px);
+    position: static;
+}
+.product-applicatio-slider.swiper .swiper-button-prev {left: -5px;color:var(--black)}
+.product-applicatio-slider.swiper .swiper-button-next {right: -5px;color:var(--black)}
+.product-applicatio-slider.swiper .swiper-button-prev:after,.product-applicatio-slider.swiper  .swiper-button-next:after {font-size: 18px;font-weight: bold;}
+
+.caregory-name{color: var(--black);display: inline-block;margin-top: 15px;text-align: center;font-weight: 500;}
