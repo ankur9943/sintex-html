@@ -80,11 +80,6 @@ $(document).ready(function () {
     });
 });
 
-
-
-
-
-
 // Navigation Script
 jQuery(document).ready(function($) {
     jQuery('.stellarnav').stellarNav({
@@ -120,6 +115,15 @@ document.querySelectorAll('.member-content').forEach(function(card) {
     } else {
         btn.style.display = "none";
     }
+});
+
+
+// Initialize Animations Time Line
+AOS.init({
+    duration: 800,
+    offset: 100,
+    once: true,
+    easing: 'ease-out-quad'
 });
     
 	
