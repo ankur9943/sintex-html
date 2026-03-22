@@ -122,6 +122,20 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 .navigation-container{
     padding: 16px;
 }
+.navbar-brand img{
+    max-width: 120px;
+}
+
+@media screen and (max-width:767px) {
+    .stellarnav .primary-button{
+       padding: 10px 20px;
+    }
+}
+@media screen and (min-width:768px) {
+    .navbar-brand img{
+        max-width: 160px;
+    }
+}
 
 
 /* Hero Banner Home page */
