@@ -50,6 +50,7 @@
 :root{
     --white : #fff;
     --light-blue : #0095DA;
+    --dark-blue : #1b4e9b;
     --grey : #7a7a7a;
     --light-grey : #626262;
     --black:#1e231c;
@@ -169,6 +170,10 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 /* Home Page - Sintex Glance Section */
 .heading-content :is(h2, .title){color: var(--light-blue);}
 .heading-content :is(p, .sub-title){color:var(--light-grey);line-height: 1.62}
+.heading-content a{color:#0095da;font-weight: 600;}
+.heading-content a:hover{color:var(--light-blue);font-weight: 600;}
+
+
 
 .sintex-glance{
     padding-block: var(--section-sapce);
@@ -322,7 +327,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
     margin-block: 1.5rem 2rem;
     padding-left: 20px;
 }
-.sustainability-list li {margin-bottom: 10px;}
+.sustainability-list li {margin-bottom: 4px;}
 .sustainability-list li .hightlight-text{
     color: var(--light-grey);
     font-weight: bold;
@@ -483,6 +488,10 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 .committee-table{
     padding-block: var(--section-sapce);
     background-image: linear-gradient(180deg, #EEEEEE 0%, #FFFFFF 100%);
+}
+.range-table-section{
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 .committee-table-inner{background: var(--white);}
 .header-row {
@@ -704,7 +713,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 .feature-grid{
     border-top:2px solid #D1D3D4;
     padding-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .feature-grid .title{
     font-size: var(--font-size-32);
@@ -1351,4 +1360,62 @@ input[type="file"]{
 
 .direction-link span {
     margin-left: 8px;
+}
+
+.list-heading{
+    font-size: var(--font-size-22);
+    color:var(--dark-blue);
+    font-weight: bold;
+    margin-bottom: 0;
+    padding-top: 10px;
+    display: inline-block;
+}
+
+ /* --- Policies Section CSS --- */
+.policies-section {padding-block: var(--section-sapce);}
+.policy-card {
+ background: var(--white);
+    border: none;
+    border-radius: 8px;
+    padding: 40px 30px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 12%);
+    transition: transform 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.policy-card:hover {
+    transform: translateY(-5px);
+}
+.policies-section .policy-card .title {
+    font-size: calc(var(--font-size-22) + 4px);
+    line-height: 1.2;
+    margin-bottom: 24px;
+    color: #000;
+    font-weight: 600;
+}
+.policies-section .read-more {
+    color: var(--light-blue);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid transparent;
+    width: fit-content;
+    text-decoration: underline;
+}
+
+a.download-pdf-btn {
+    text-wrap: nowrap;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--light-blue);
+    text-decoration: none;
+}
+a.download-pdf-btn:hover {
+     text-decoration: underline;
 }
