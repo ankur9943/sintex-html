@@ -121,15 +121,18 @@ document.querySelectorAll('.member-content').forEach(function(card) {
 
 // Current Page Active Navigation 
 const currentPage = window.location.pathname.split("/").pop();
-const navLinks = document.querySelectorAll("#main-nav li a");
-navLinks.forEach(link => {
-    const linkPage = link.getAttribute("href");
-    if (linkPage === currentPage) {
+document.querySelectorAll("#main-nav li a").forEach(link => {
+  const linkPage = link.getAttribute("href");
+  if (linkPage && currentPage.includes(linkPage)) {
     link.classList.add("active");
     link.setAttribute("current-page", "true");
+    let parent = link.closest("li");
+    while (parent) {
+      parent.classList.add("active");
+      parent = parent.parentElement.closest("li");
     }
+  }
 });
-
 
 // Initialize Animations Time Line
 AOS.init({
