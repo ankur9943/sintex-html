@@ -15,6 +15,7 @@
 .stellarnav > ul > li { display: inline-block;  }
 .stellarnav > ul > li > a { padding: 10px 10px;}
 .stellarnav > ul li.has-sub ul li a { color: #fff;font-size: 15px;font-weight: 400;}
+.stellarnav > ul > li > a.active[current-page="true"] {color: var(--light-blue);}
    
 
 /* first level dd */

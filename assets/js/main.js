@@ -128,5 +128,14 @@ AOS.init({
     once: true,
     easing: 'ease-out-quad'
 });
-    
-	
+
+// Current Page Active Navigation 
+const currentPage = window.location.pathname.split("/").pop();
+const navLinks = document.querySelectorAll("#main-nav li a");
+navLinks.forEach(link => {
+    const linkPage = link.getAttribute("href");
+    if (linkPage === currentPage) {
+    link.classList.add("active");
+    link.setAttribute("current-page", "true");
+    }
+});
