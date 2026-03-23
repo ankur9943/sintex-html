@@ -880,7 +880,8 @@ padding-inline: 10px;}
 
 
 
-.common-hero-section{padding-block: var(--section-sapce)}
+.common-hero-section{padding-block: var(--section-sapce);padding-inline:10px}
+.sintex-address{padding-inline:10px}
 .common-hero-section .row{flex-flow: column-reverse;}
 .common-hero-section .image{
     background-position: center !important;
