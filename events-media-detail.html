@@ -4,16 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Event & Exhibition</title>
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        <!-- Standard favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-1-90x90.png">
+        <!-- Smaller icon -->
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon-1-300x300.png">
+        <!-- ICO fallback (important for older browsers) -->
+        <link rel="shortcut icon" href="assets/icons/favicon.ico">
+        <!-- Apple devices -->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon-1-300x300.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
             crossorigin="anonymous">
-        <link rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- AOS Animation Library CDN -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link href="assets/css/stellarnav.css" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
     </head>
@@ -88,47 +90,36 @@
         </div>
 
         <!-- Page Title Section (Common) -->
-        <div class="title-box">
-            <div class="container"><h1>Event & Exhibition</h1></div>
+        <div class="title-box" data-aos="fade-up">
+            <div class="container"><h1>Event Name</h1></div>
         </div> 
         
-    
-        <!-- Info Hero Section (Inner Pages Hero Section) -->
-        <div class="common-hero-section">
+        <!-- events-media-section -->
+        <div class="events-detail-content" data-aos="fade-up">
             <div class="container">
-                <div class="heading-content">
-                    <p class="sub-title">
-                        We believe that industry events and exhibitions are more than just showcases—they’re opportunities to connect, collaborate, and grow.
-                        <br> <br>
-                        Our presence at national and international exhibitions reflects our commitment to <strong>innovation, quality, and global engagement</strong>. From leading trade shows to industry-specific expos, we proudly present our latest offerings, meet with partners, and engage with new opportunities. 
-                    </p>
+                <div class="image-box-container justify-content-center" data-aos="fade-up" id="image-gallery">
+                    <img src="assets/images/1.jpg" data-aos="fade-up" alt="Heimtextil – Germany Jan’26">
+                    <img src="assets/images/3-1.jpg" data-aos="fade-up" alt="Heimtextil – Germany Jan’26">
+                    <img src="assets/images/4-1.jpg" data-aos="fade-up" alt="Heimtextil – Germany Jan’26">
+                    <img src="assets/images/5-1.jpg" data-aos="fade-up" alt="Heimtextil – Germany Jan’26">
+                    <img src="assets/images/2.jpg" data-aos="fade-up" alt="Heimtextil – Germany Jan’26">
                 </div>
             </div>
         </div>
 
-        <!-- events-media-section -->
-        <div class="events-media-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-4">
-                        <a href="#" class="events-card">
-                            <img src="assets/images/1.jpg" alt="Heimtextil – Germany Jan’26">
-                            <h2 class="title">Heimtextil – Germany Jan’26</h2>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                        <a href="#" class="events-card">
-                            <img src="assets/images/bharat-tex-delhi-feb-25.jpg" alt="Bharat Tex – Delhi Feb’25">
-                            <h2 class="title">Bharat Tex – Delhi Feb’25</h2>
-                        </a>
-                    </div>
-                    <div class="col-md-6 col-lg-4">
-                         <a href="#" class="events-card">
-                            <img src="assets/images/fiber-yarn-mumbai-jan-25.png" alt="Fiber & Yarn – Mumbai Jan’25">
-                            <h2 class="title">Fiber & Yarn – Mumbai Jan’25</h2>
-                        </a>
-                    </div>
+        <!-- Lightbox Popup -->
+        <div id="lightbox">
+            <button id="close-btn">&times;</button>
+            <button id="prev-btn" class="nav-btn">&lsaquo;</button>
+            <button id="next-btn" class="nav-btn">&rsaquo;</button>
+
+            <div class="lightbox-content">
+                <img id="lightbox-img" src="" alt="Popup view">
+                <div class="image-count">
+                    <span id="currentIndex">1</span> / <span id="totalImages">10</span>
                 </div>
+                
+                <!-- <p id="lightbox-caption"></p> -->
             </div>
         </div>
 
@@ -195,19 +186,13 @@
             </div>
         </footer>
 
-
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="./assets/js/main.js"></script>
         <script type="text/javascript" src="./assets/js/stellarnav.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
             crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-            integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-            crossorigin="anonymous"></script>
-
-</body>
+    </body>
 </html>   
