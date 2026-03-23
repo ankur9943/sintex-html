@@ -221,7 +221,6 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 .our-product{
     padding-block: var(--section-sapce);
     padding-inline: 10px;
-    padding-inline: 20px;
 }
 .container-fluid,
 .navigation-container{

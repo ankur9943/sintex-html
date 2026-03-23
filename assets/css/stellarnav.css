@@ -16,6 +16,15 @@
 .stellarnav > ul > li > a { padding: 10px 10px;}
 .stellarnav > ul li.has-sub ul li a { color: #fff;font-size: 15px;font-weight: 400;}
 .stellarnav > ul > li > a.active[current-page="true"] {color: var(--light-blue);}
+
+@media screen and (max-width:1199px) {
+    .stellarnav > ul li.has-sub ul li a { 
+    color: #dee1e5;
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 26px;}
+    .stellarnav > ul > li > a.active[current-page="true"] {color: #fff;}
+}
    
 
 /* first level dd */
