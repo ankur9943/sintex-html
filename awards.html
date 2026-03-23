@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Awards</title>
-   <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    <!-- Standard favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-1-90x90.png">
+    <!-- Smaller icon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/icons/favicon-1-300x300.png">
+    <!-- ICO fallback (important for older browsers) -->
+    <link rel="shortcut icon" href="assets/icons/favicon.ico">
+    <!-- Apple devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon-1-300x300.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
         crossorigin="anonymous">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="assets/css/stellarnav.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -18,79 +22,80 @@
 <body>
     <a class="visually-hidden-focusable" href="#content">Skip to main content</a>
 
-   <!-- Navbar (Main Navigation) -->
-        <div class="navigation-container">
-            <div class="stellarnav mobile d-flex">
-                <a class="navbar-brand" href="index.html"> 
-                    <img src="assets/images/light-logo.png" alt="Sintex">
+    <!-- Navbar (Main Navigation) -->
+    <div class="navigation-container">
+        <div class="stellarnav mobile d-flex">
+            <a class="navbar-brand" href="index.html"> 
+                <img src="assets/images/light-logo.png" alt="Sintex">
+            </a>
+            <ul id="main-nav">
+                <li>
+                    <a href="#">Who Are We</a>
+                    <ul>
+                        <li><a href="who-are-we.html">Who Are We</a></li>
+                        <li><a href="leadership-team.html">Leadership Team</a></li>
+                        <li><a href="awards.html">Awards</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Products</a>
+                    <ul>
+                        <li><a href="our-yarn.html">Our Yarn</a></li>
+                        <li><a href="cotton-and-blended-yarns.html">100% Cotton & Blended</a></li>
+                        <li><a href="linen-and-blended-yarns.html">100% Linen & Blended</a></li>
+                        <li><a href="bleached-absorbent-cotton.html">100% Bleached Absorbent</a></li>
+                        <li><a href="sustainable-value-added.html">Sustainable & Value-added</a></li>
+                    </ul>
+                </li>
+                <li><a href="infrastructure.html">Infrastructure</a></li>
+                <li>
+                    <a href="#">Quality</a>
+                    <ul>
+                        <li><a href="quality-practices.html">Quality Practices</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Sustainability</a>
+                    <ul>
+                        <li><a href="sustainability-overview.html">Overview</a></li>
+                        <li><a href="traceability.html">Traceability</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Investor Desk</a>
+                    <ul>
+                        <li><a href="investors.html">Statutory Documents</a></li>
+                        <li><a href="financial-reports.html">Financial Reports</a></li>
+                        <li>
+                            <a href="#">Corporate Governance</a>
+                            <ul>
+                                <li><a href="shareholding-patterns.html">Shareholding Patterns</a></li>
+                                <li><a href="policies.html">Policies</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="announcements.html">Announcements</a></li>
+                        <li><a href="pressrelease.html">Press Release</a></li>
+                        <li><a href="unclaimed-dividend.html">Unclaimed Dividend</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div>
+                <a class="primary-button" href="contact.html">Get In Touch</a>
+                <a href="#" class="menu-toggle toggle-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 23.4 15.4"><g transform="translate(-0.3 -0.3)"><path d="M23,1.7H1A.7.7,0,0,1,1,.3H23a.7.7,0,1,1,0,1.4Z"></path><path d="M23,8.7H1A.7.7,0,1,1,1,7.3H23a.7.7,0,1,1,0,1.4Z"></path><path d="M17,15.7H1a.7.7,0,1,1,0-1.4H17a.7.7,0,1,1,0,1.4Z"></path></g></svg>
                 </a>
-                <ul id="main-nav">
-                    <li>
-                        <a href="#">Who Are We</a>
-                        <ul>
-                            <li><a href="who-are-we.html">Who Are We</a></li>
-                            <li><a href="leadership-team.html">Leadership Team</a></li>
-                            <li><a href="awards.html">Awards</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Products</a>
-                        <ul>
-                            <li><a href="our-yarn.html">Our Yarn</a></li>
-                            <li><a href="cotton-and-blended-yarns.html">100% Cotton & Blended</a></li>
-                            <li><a href="linen-and-blended-yarns.html">100% Linen & Blended</a></li>
-                            <li><a href="bleached-absorbent-cotton.html">100% Bleached Absorbent</a></li>
-                            <li><a href="sustainable-value-added.html">Sustainable & Value-added</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="infrastructure.html">Infrastructure</a></li>
-                    <li>
-                        <a href="#">Quality</a>
-                        <ul>
-                            <li><a href="quality-practices.html">Quality Practices</a></li>
-                            <li><a href="certifications.html">Certifications</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Sustainability</a>
-                        <ul>
-                            <li><a href="sustainability-overview.html">Overview</a></li>
-                            <li><a href="traceability.html">Traceability</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Investor Desk</a>
-                        <ul>
-                            <li><a href="investors.html">Statutory Documents</a></li>
-                            <li><a href="financial-reports.html">Financial Reports</a></li>
-                            <li>
-                                <a href="#">Corporate Governance</a>
-                                <ul>
-                                    <li><a href="shareholding-patterns.html">Shareholding Patterns</a></li>
-                                    <li><a href="policies.html">Policies</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="announcements.html">Announcements</a></li>
-                            <li><a href="pressrelease.html">Press Release</a></li>
-                            <li><a href="unclaimed-dividend.html">Unclaimed Dividend</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div>
-                    <a class="primary-button" href="contact.html">Get In Touch</a>
-                    <a href="#" class="menu-toggle toggle-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 23.4 15.4"><g transform="translate(-0.3 -0.3)"><path d="M23,1.7H1A.7.7,0,0,1,1,.3H23a.7.7,0,1,1,0,1.4Z"></path><path d="M23,8.7H1A.7.7,0,1,1,1,7.3H23a.7.7,0,1,1,0,1.4Z"></path><path d="M17,15.7H1a.7.7,0,1,1,0-1.4H17a.7.7,0,1,1,0,1.4Z"></path></g></svg>
-                    </a>
-                 </div>
-            </div>
+                </div>
         </div>
+    </div>
+
     <!-- Page Title Section (Common) -->
-    <div class="title-box">
+    <div class="title-box" data-aos="fade-up">
         <div class="container"><h1>Awards</h1></div>
     </div>
 
     <!-- Awards Cards -->
-    <div class="awards-card-section">
+    <div class="awards-card-section" data-aos="fade-up">
         <div class="container">
             <div class="awards-card-inner">
                 <div class="awards-card-content">
@@ -115,7 +120,7 @@
         </div>
     </div>
 
-    <div class="awards-card-section bg-light-blue">
+    <div class="awards-card-section bg-light-blue" data-aos="fade-up">
         <div class="container">
             <div class="awards-card-inner">
                 <div class="awards-card-content">
@@ -140,7 +145,7 @@
         </div>
     </div>
 
-    <div class="awards-card-section">
+    <div class="awards-card-section" data-aos="fade-up">
         <div class="container">
             <div class="awards-card-inner">
                 <div class="awards-card-content">
@@ -176,7 +181,7 @@
         </div>
     </div>
 
-    <div class="awards-card-section bg-light-blue">
+    <div class="awards-card-section bg-light-blue" data-aos="fade-up">
         <div class="container">
             <div class="awards-card-inner">
                 <div class="awards-card-content">
