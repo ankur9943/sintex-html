@@ -47,7 +47,6 @@ $(document).ready(function () {
     });
 });
 
-
 // product Applicatio Slider
 $(document).ready(function () {
     var swiper = new Swiper('.product-applicatio-slider', {
@@ -120,15 +119,6 @@ document.querySelectorAll('.member-content').forEach(function(card) {
     }
 });
 
-
-// Initialize Animations Time Line
-AOS.init({
-    duration: 800,
-    offset: 100,
-    once: true,
-    easing: 'ease-out-quad'
-});
-
 // Current Page Active Navigation 
 const currentPage = window.location.pathname.split("/").pop();
 const navLinks = document.querySelectorAll("#main-nav li a");
@@ -139,3 +129,13 @@ navLinks.forEach(link => {
     link.setAttribute("current-page", "true");
     }
 });
+
+
+// Initialize Animations Time Line
+AOS.init({
+    duration: 800,
+    offset: 100,
+    once: true,
+    easing: 'ease-out-quad'
+});
+
