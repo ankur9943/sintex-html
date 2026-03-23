@@ -773,7 +773,7 @@ padding-inline: 10px;}
 .range-table{
     width: 100%;
     border-collapse: collapse;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .range-table thead {
     background: #d9edf7;
@@ -1710,3 +1710,17 @@ a.download-pdf-btn:hover {
 .sitemap-box .ttl{
     font-weight: 700;
 }
+
+/* Search Form for table */
+.search-form {
+    text-align: right;
+}
+.search-form input.search-input {
+    border-radius: 8px;
+    padding: 13px 10px;
+    border: 1px solid #eee;
+    width: 250px;
+    color: #000;
+   margin-left: 5px;
+}
+.search-form input.search-input:is(:hover,:focus) {outline: var(--light-blue);border-color: var(--light-blue);}
