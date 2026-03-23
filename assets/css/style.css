@@ -1,9 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Parkinsans', 'Lato', 'Roboto', sans-serif ;
-}
-
 
 @font-face {
     font-family: 'Parkinsans';
@@ -94,7 +88,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 .container{max-width: 1290px !important;width: 100%;}
 .primary-button{
     background-color: var(--light-blue);
-    color: var(--white);
+    color: var(--white)!important;
     box-shadow: none;
     text-decoration: none;
     padding: 14px 32px;
@@ -118,8 +112,6 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
     display: inline-block;
     fill: currentColor;
 }
-
-
 .navigation-container{
     padding: 16px;
 }
@@ -159,6 +151,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 .about-us{
     background: linear-gradient(180deg, #FCFFE5 0%, #FFFFFF 70%);
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     border-bottom:1px solid #e0ddd9;
 }
 .about-us .sub-title{color: var(--grey);font-size: 20px;font-weight: 600;padding-bottom: .5rem;display: inline-block;}
@@ -177,6 +170,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 
 .sintex-glance{
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     border-bottom: 1px solid #e0ddd9;
 }
 .sintex-glance-card{
@@ -226,6 +220,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 /* Home Page -  Our Product Section */
 .our-product{
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     padding-inline: 20px;
 }
 .container-fluid,
@@ -302,6 +297,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
     background-size: cover !important;
     background-repeat: no-repeat !important;
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
 }
 .cta-section-inner{
     text-align: center;
@@ -320,6 +316,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 /* Home Page - Sustainability Infrastructure Section */
 .sustainability-section{
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     background-image: linear-gradient(180deg, #E3F1FF 0%, #FFFFFF 70%);
     border-bottom: 1px solid #e0ddd9;
 }
@@ -340,6 +337,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 /* Home Page - Global Presence */
 .global-presence{
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     border-bottom: 1px solid #e0ddd9;
     text-align: center;
     padding-inline: 16px;
@@ -369,6 +367,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 
 .textile-excellence-section{
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     border-bottom: 1px solid #e0ddd9;
 }
 .textile-excellence-section .heading-content :is(p,.sub-title){
@@ -384,6 +383,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 /* Foundation Section */
 .foundation-section{
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     border-bottom: 1px solid #e0ddd9;
 }
 .foundation-section .heading-content{
@@ -408,7 +408,8 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 
 
 /* Our Core Values Section */
-.core-value-section{padding-block: var(--section-sapce);}
+.core-value-section{padding-block: var(--section-sapce);
+padding-inline: 10px;}
 .blue-divider{
     border-bottom: 1px solid var(--light-blue);
     margin-block:8px 30px;
@@ -437,6 +438,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
  /* Board of Directors Section */
 .board-directors-section{
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     background-image: linear-gradient(180deg, #E3F1FF 0%, #FFFFFF 70%);
 }
 .member-card{
@@ -487,6 +489,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 /* committee-table Section */
 .committee-table{
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     background-image: linear-gradient(180deg, #EEEEEE 0%, #FFFFFF 100%);
 }
 .range-table-section{
@@ -527,7 +530,8 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 
 /* Awards Page  */
 /*******************/
-.awards-card-section{padding-block: var(--section-sapce);}
+.awards-card-section{padding-block: var(--section-sapce);
+padding-inline: 10px;}
 .awards-card-inner{
     display: flex;
     justify-content: space-between;
@@ -568,6 +572,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 /********************/
 .superior-yarn{
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     background-image: linear-gradient(180deg, #E3F1FF 0%, #FFFFFF 70%);
     border-bottom: 1px solid #e0ddd9;
 }
@@ -604,6 +609,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 .our-product-grid{
     background-color: #FAFAFA;
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     text-align: center;
 }
 .our-product-grid .row{justify-content: center;}
@@ -635,6 +641,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 /* **************************************/
 .product-application-section{
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     text-align: center;
 }
 .product-application-inner{
@@ -657,6 +664,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 /* Product Detail section */
 .product-detail-section{ 
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     background: linear-gradient(180deg, #E2F4FE 0%, #E2F4FE 70%);
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -739,6 +747,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 
 .range-table-section{
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     background-color: #EEEEEE87;
 }
 .range-table{
@@ -772,7 +781,8 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 
 
 /* Credentials Section */
-.credentials-section{padding-block: var(--section-sapce);text-align: center;}
+.credentials-section{padding-block: var(--section-sapce);
+    padding-inline: 10px;text-align: center;}
 .brand-logo-container{
     margin-top: 40px;
     display: flex;
@@ -792,6 +802,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 /* What Makes Sintex Bleached Cotton Unique? */
 .cotton-makeing-points{
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     text-align: center;
     background: linear-gradient(180deg, #E3F1FF 0%, #FFFFFF 70%);
     border-bottom: 1px solid #e0ddd9;
@@ -842,6 +853,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 /* Industry Collaboration Section */
 .industry-collaboration-section{
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     background-image: linear-gradient(180deg, #EEEEEE 0%, #FFFFFF 100%);
     text-align: center;
 }
@@ -889,6 +901,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 
 .footprint-section{
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     background-image: linear-gradient(180deg, #EEEEEE66 0%, #FFFFFF 100%);
     text-align: center;
 }
@@ -909,13 +922,15 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
     .footprint-section .content-card {margin-bottom:40px;}
 }
 
-.sustainability-infrastructure-section{padding-block: var(--section-sapce); text-align: center;}
+.sustainability-infrastructure-section{padding-block: var(--section-sapce);
+    padding-inline: 10px; text-align: center;}
 .sustainability-infrastructure-section .content-card { margin-top:45px;}
 
 
 /*  */
 .process-section{
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
     background: linear-gradient(180deg, #EEEEEE66 0%, #FFFFFF 100%);
 }
 .process-tabs{margin-top: 25px;}
@@ -957,7 +972,8 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 
 
 /* Official Information Section */
-.official-info-section{padding-block: var(--section-sapce);}
+.official-info-section{padding-block: var(--section-sapce);
+padding-inline: 10px;}
 .official-info-section .heading-content{margin-bottom: 60px;}
 .official-info-section .label {
     font-weight: 500; 
@@ -1068,7 +1084,8 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 
 
 /* Timeline */
-.timeline-section{padding-block: var(--section-sapce);}
+.timeline-section{padding-block: var(--section-sapce);
+padding-inline: 10px;}
 .timeline-container {position: relative;}
 .time-line-title{
     display: flex;
@@ -1203,6 +1220,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 .pressrelease-tab-section{
     background-image: linear-gradient(180deg, #E3F1FF 0%, #FFFFFF 70%);
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
 }
 .pressrelease-tab-section ul{
     gap: 14px;
@@ -1249,6 +1267,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 .events-media-section{
     background-image: linear-gradient(180deg, #E3F1FF 0%, #FFFFFF 70%);
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
 }
 .events-card{
     display: flex;
@@ -1285,6 +1304,7 @@ img { max-width: 100% ; transition: all .3s ease-in-out;}
 .careers-form-section{
     background-image: linear-gradient(180deg, #E3F1FF 0%, #FFFFFF 70%);
     padding-block: var(--section-sapce);
+    padding-inline: 10px;
 }
 .careers-form{
     max-width: 800px;
@@ -1372,7 +1392,8 @@ input[type="file"]{
 }
 
  /* --- Policies Section CSS --- */
-.policies-section {padding-block: var(--section-sapce);}
+.policies-section {padding-block: var(--section-sapce);
+padding-inline: 10px;}
 .policy-card {
  background: var(--white);
     border: none;
