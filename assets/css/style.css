@@ -1251,7 +1251,7 @@ padding-inline: 10px;}
     padding-inline: 10px;
 }
 .pressrelease-tab-section ul{
-    gap: 14px;
+    gap: 8px;
     justify-content: center;
     margin-bottom: 30px;
 }
@@ -1259,9 +1259,9 @@ padding-inline: 10px;}
     background: #08aefb;
     border-radius: 0px;
     color: #fff;
-    padding: 15px 35px;
+    padding: 10px 20px;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 15px;
 }
 .pressrelease-tab-section li.nav-item :is(button.active,button:hover) {
     background: #0095DA;
@@ -1273,23 +1273,39 @@ padding-inline: 10px;}
     justify-content: center;
 }
 .press-card{
-    flex: 1 0 30%;
-    max-width: 30%;
+    flex: 1 0 100%;
+    max-width: 100%;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .press-card .title{
-    font-size: 18px;
+    font-size: 14px;
     color:var(--black);
     margin-bottom: 0px;
 }
 .press-card .press-link{
-    font-size: calc(var(--font-size-22) + 2px);
+    font-size: 16px;
     font-weight: 600;
     color:#1b4e9b;
     text-decoration: none;
 }
-
+@media screen and (min-width:600px) {
+    .press-card{flex: 1 0 45%;max-width: 45%;margin-top: 20px;}
+    .press-card .press-link{font-size:17px}
+    .press-card .title{ font-size: 15px;}
+    .pressrelease-tab-section li.nav-item button {font-size: 16px;padding: 12px 20px;}
+}
+@media screen and (min-width:991px) {
+    .press-card{flex: 1 0 32.5%;max-width: 32.5%;margin-top: 30px;}
+    .pressrelease-tab-section li.nav-item button {font-size: 18px;padding: 15px 35px;}
+    .pressrelease-tab-section ul{gap:14px}
+}
+@media screen and (min-width:1280px) {
+    .press-card{flex: 1 0 30%;max-width: 30%;margin-top: 40px;}
+    .press-card .press-link{font-size: calc(var(--font-size-22) + 2px);}
+    .press-card .title{ font-size: 18px;}
+  
+}
 
 /* events-card */
 .events-media-section{
